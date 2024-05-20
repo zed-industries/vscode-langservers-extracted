@@ -48,6 +48,7 @@
     "regenerator-runtime": "^0.13.9",
     "request-light": "^0.7.0",
     "semver": "^7.6.1",
+    "typescript": "^5.4.5",
     "vscode-css-languageservice": "^6.2.14",
     "vscode-html-languageservice": "^5.2.0",
     "vscode-json-languageservice": "^5.3.11",
