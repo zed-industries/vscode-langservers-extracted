@@ -25,6 +25,8 @@ yarn compile
 # copy to dist
 cd $DIR/..
 
+npm install
+
 #mkdir -p ./dist/css-language-server
 #cp -r ./tmp/vscode/extensions/css-language-features/server/out/* ./dist/css-language-server/
 #npx babel ./dist/css-language-server --out-dir ./lib/css-language-server/
