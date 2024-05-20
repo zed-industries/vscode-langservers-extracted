@@ -1,8 +1,14 @@
 #!/usr/bin/env node
+const { execSync } = require("child_process");
 const path = require("path");
-const { exec } = require("child_process");
 
-exec("npm install", (error, stdout, stderr) => {
+// Get the current directory of the file
+const currentDir = __dirname;
+
+// Navigate to the parent directory of the parent directory
+const parentOfParentDir = path.resolve(currentDir, '..');
+
+execSync(`npm install --silent .`, { cwd: parentOfParentDir }, (error, stdout, stderr) => {
   if (error) {
     console.error(`Error: ${error.message}`);
     return;
@@ -11,6 +17,7 @@ exec("npm install", (error, stdout, stderr) => {
     console.error(`Stderr: ${stderr}`);
     return;
   }
+
 });
 
 require(
