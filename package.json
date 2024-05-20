@@ -41,6 +41,7 @@
     "rimraf": "^3.0.2"
   },
   "dependencies": {
+    "@types/node": "^20.12.12",
     "@vscode/l10n": "^0.0.18",
     "core-js": "^3.20.1",
     "jsonc-parser": "^3.2.1",

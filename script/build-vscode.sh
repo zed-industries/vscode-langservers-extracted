@@ -20,6 +20,7 @@ git pull --rebase
 cd $DIR/../tmp/vscode
 yarn
 cd ./extensions/html-language-features/server
+yarn
 yarn compile
 
 # copy to dist
@@ -27,19 +28,7 @@ cd $DIR/..
 
 npm install
 
-#mkdir -p ./dist/css-language-server
-#cp -r ./tmp/vscode/extensions/css-language-features/server/out/* ./dist/css-language-server/
-#npx babel ./dist/css-language-server --out-dir ./lib/css-language-server/
-
 mkdir -p ./dist/html-language-server
 cp -r ./tmp/vscode/extensions/html-language-features/server/out/* ./dist/html-language-server/
 npx babel ./dist/html-language-server --out-dir ./lib/html-language-server/
-
-#mkdir -p ./dist/json-language-server
-#cp -r ./tmp/vscode/extensions/json-language-features/server/out/* ./dist/json-language-server/
-#npx babel ./dist/json-language-server --out-dir ./lib/json-language-server/
-
-#mkdir -p ./dist/markdown-language-server
-#cp -r ./tmp/vscode/extensions/markdown-language-features/server/out/* ./dist/markdown-language-server/
-#npx babel ./dist/markdown-language-server --out-dir ./lib/markdown-language-server/
 
