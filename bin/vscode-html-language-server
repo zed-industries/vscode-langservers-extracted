@@ -1,24 +1,30 @@
 #!/usr/bin/env node
 const { execSync } = require("child_process");
 const path = require("path");
+const process = require("process");
 
 // Get the current directory of the file
 const currentDir = __dirname;
 
 // Navigate to the parent directory of the parent directory
-const parentOfParentDir = path.resolve(currentDir, '..');
+const parentOfParentDir = path.resolve(currentDir, "..");
+const nodePath = process.execPath;
+const npmPath = path.join(path.dirname(nodePath), "npm");
 
-execSync(`npm install --silent .`, { cwd: parentOfParentDir }, (error, stdout, stderr) => {
-  if (error) {
-    console.error(`Error: ${error.message}`);
-    return;
-  }
-  if (stderr) {
-    console.error(`Stderr: ${stderr}`);
-    return;
-  }
-
-});
+execSync(
+  `${npmPath} install --silent .`,
+  { cwd: parentOfParentDir },
+  (error, _stdout, stderr) => {
+    if (error) {
+      console.error(`Error: ${error.message}`);
+      return;
+    }
+    if (stderr) {
+      console.error(`Stderr: ${stderr}`);
+      return;
+    }
+  },
+);
 
 require(
   path.join(__dirname, "/../lib/html-language-server/node/htmlServerMain.js"),
