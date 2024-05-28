@@ -1,6 +1,6 @@
 {
   "name": "@zed-industries/vscode-langservers-extracted",
-  "version": "4.10.0",
+  "version": "4.10.1",
   "description": "",
   "main": "index.js",
   "files": [

@@ -1127,6 +1127,14 @@
   resolved "https://registry.npmjs.org/@vscode/l10n/-/l10n-0.0.18.tgz"
   integrity sha512-KYSIHVmslkaCDyw013pphY+d7x1qV8IZupYfeIfzNA+nsaWHbn5uPuQRvdRFsa9zFzGeudPuoGoZ1Op4jrJXIQ==
 
+"@zed-industries/vscode-languageserver@10.0.0-next.3":
+  version "10.0.0-next.3"
+  resolved "https://registry.npmjs.org/@zed-industries/vscode-languageserver/-/vscode-languageserver-10.0.0-next.3.tgz"
+  integrity sha512-NFhRtELp6LcubAonzqIKlhyaPbDI++JWXlgC37Mkj1fqNhnrQdchJpfs6eX5CoboKQgFlOP1GYG1NfeA8otJOQ==
+  dependencies:
+    "@types/node" "16.11.43"
+    vscode-languageserver-protocol "3.17.6-next.4"
+
 aggregate-error@^3.0.0:
   version "3.1.0"
   resolved "https://registry.npmjs.org/aggregate-error/-/aggregate-error-3.1.0.tgz"
@@ -4535,14 +4543,6 @@ vscode-languageserver-types@3.17.6-next.3:
   version "3.17.6-next.3"
   resolved "https://registry.npmjs.org/vscode-languageserver-types/-/vscode-languageserver-types-3.17.6-next.3.tgz"
   integrity sha512-l5kNFXFRQGuzriXpuBqFpRmkf6f6A4VoU3h95OsVkqIOoi1k7KbwSo600cIdsKSJWrPg/+vX+QMPcMw1oI7ItA==
-
-"vscode-languageserver@https://gitpkg.now.sh/zed-industries/vscode-languageserver-node/server?document_manager_include_changes":
-  version "10.0.0-next.3"
-  resolved "https://gitpkg.now.sh/zed-industries/vscode-languageserver-node/server?document_manager_include_changes"
-  integrity sha512-nKrGSN3wHjA7YV/Qek4QEbxh1bBzW/6MflzeE4Mrh16Tmz9mX6hij1E1WZdLZwvWYQa2b7DkyC/wYtdl83aI4Q==
-  dependencies:
-    "@types/node" "16.11.43"
-    vscode-languageserver-protocol "3.17.6-next.4"
 
 vscode-markdown-languageservice@^0.5.0-alpha.6:
   version "0.5.0-alpha.6"
