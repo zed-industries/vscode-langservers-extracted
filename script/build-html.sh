@@ -30,5 +30,4 @@ npm install
 
 mkdir -p ./dist/html-language-server
 cp -r ./tmp/vscode/extensions/html-language-features/server/out/* ./dist/html-language-server/
-npx babel ./dist/html-language-server --out-dir ./lib/html-language-server/
-
+npx babel ./dist/html-language-server --out-dir ./packages/html/lib/
