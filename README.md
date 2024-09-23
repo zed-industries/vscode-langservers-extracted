@@ -4,21 +4,25 @@ HTML/CSS/JSON/ESLint language servers extracted from [vscode](https://github.com
 
 ## Fork
 
-This is a [Zed Industries](https://zed.dev) fork of [hrsh7th/vscode-langservers-extracted](https://github.com/hrsh7th/vscode-langservers-extracted).  Please see [CHANGELOG.md](CHANGELOG.md) for more.
+This is a [Zed Industries](https://zed.dev) fork of [hrsh7th/vscode-langservers-extracted](https://github.com/hrsh7th/vscode-langservers-extracted). Please see [CHANGELOG.md](CHANGELOG.md) for more.
+
+# Usage
+
+Install npm packages for the server(s) you need:
+
+- `npm install -g @zed-industries/vscode-css-language-server`
+- `npm install -g @zed-industries/vscode-eslint-language-server`
+- `npm install -g @zed-industries/vscode-html-language-server`
+- `npm install -g @zed-industries/vscode-json-language-server`
+
+Or you can install all four with `npm i -g @zed-industries/vscode-langservers-extracted`.
 
 # Why?
 
 - Microsoft provided awesome Language Servers for the community but it didn't update for a long time.
 - Currently, the latest css-language-server is improved a bit than `vscode-css-langserver-bin`.
 
-
 # Usage
-
-You can install this via `npm i -g vscode-langservers-extracted`.
-
-OR
-
-in the aur via `yay -S vscode-langservers-extracted`
 
 After that, you get the following commands.
 
@@ -29,42 +33,36 @@ Ready
 - `vscode-json-language-server`
 - `vscode-eslint-language-server`
 
-Not yet
-
-- `vscode-markdown-language-server`
-- `vscode-anycode-language-server`
-
-
 # Build
 
-### Requirements
+> [!NOTE]
+> This package was previously built with yarn (because VSCode was built using yarn).
+> VSCode has switched to vanilla npm so similarly we no longer use yarn to build.
 
-You should install yarn for the building vscode.
+## Install locally:
 
+```
+npm install
+```
 
-### Commands
+## Update
+
+Change what you need and then:
+
+```
+./update.sh
+```
+
+### Release
 
 ```bash
-npm i -g yarn
-yarn
-yarn update
-node ./script/depcheck.js
+npm run depcheck
+npm run fix
 # npm run release
 ```
 
-
 # LICENSE
 
-This package licensed under the MIT.
-
-See the [LICENSE](./LICENSE)
-
-
-# THIRD-PARTY LICENSE
-
-- https://github.com/Microsoft/vscode
-  - https://github.com/microsoft/vscode/blob/main/LICENSE.txt
-- https://github.com/Microsoft/vscode-eslint
-  - https://github.com/microsoft/vscode-eslint/blob/master/License.txt
-- https://github.com/Microsoft/vscode-anycode
-  - https://github.com/microsoft/vscode-anycode/blob/master/LICENSE
+- [Package License](./LICENSE) (MIT)
+- [VSCode License](https://github.com/microsoft/vscode/blob/main/LICENSE.txt) (MIT)
+- [VSCode Eslint License](https://github.com/microsoft/vscode-eslint/blob/master/License.txt) (MIT)

@@ -1,62 +1,42 @@
 {
   "name": "@zed-industries/vscode-langservers-extracted",
+<<<<<<< Updated upstream
   "version": "4.10.3",
+=======
+>>>>>>> Stashed changes
   "description": "",
-  "main": "index.js",
-  "files": [
-    "lib/",
-    "bin/"
+  "version": "5.0.0-pre1",
+  "contributors": [
+    "hrsh7th",
+    "notpeter",
+    "osiewicz"
   ],
-  "directories": {
-    "bin": "./bin"
-  },
-  "bin": {
-    "vscode-css-language-server": "bin/vscode-css-language-server",
-    "vscode-eslint-language-server": "bin/vscode-eslint-language-server",
-    "vscode-html-language-server": "bin/vscode-html-language-server",
-    "vscode-json-language-server": "bin/vscode-json-language-server",
-    "vscode-markdown-language-server": "bin/vscode-markdown-language-server"
-  },
+  "license": "MIT",
+  "private": true,
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/hrsh7th/vscode-langservers-extracted.git"
+    "url": "git+https://zed-industries/vscode-langservers-extracted.git"
   },
-  "keywords": [
-    "language-server-protocol"
-  ],
   "scripts": {
-    "clean": "rimraf {lib,dist}/*",
-    "update": "yarn clean && ./script/build.sh && node ./script/depcheck.js",
-    "release": "np --no-yarn",
-    "test": "echo 1"
-  },
-  "author": "hrsh7th",
-  "license": "MIT",
-  "devDependencies": {
-    "@babel/cli": "^7.24.5",
-    "@babel/core": "^7.24.5",
-    "@babel/preset-env": "^7.16.5",
-    "np": "^7.7.0",
-    "npm-run-all": "^4.1.5",
-    "rimraf": "^3.0.2"
+    "check": "npx prettier --check . && npm run depcheck",
+    "depcheck": "npx syncpack list-mismatches && for dir in css eslint html json; do npx depcheck packages/$dir; done && scripts/depcheck.js",
+    "fix": "npx syncpack fix-mismatches && npx syncpack format && npx prettier --write .",
+    "release": "npx np --no-yarn"
   },
   "dependencies": {
-    "@types/node": "^20.12.12",
-    "@vscode/l10n": "^0.0.18",
-    "core-js": "^3.37.1",
-    "jsonc-parser": "^3.2.1",
-    "regenerator-runtime": "^0.13.9",
-    "request-light": "^0.7.0",
-    "semver": "^7.6.1",
-    "typescript": "^5.4.5",
-    "vscode-css-languageservice": "^6.2.14",
-    "vscode-html-languageservice": "^5.2.0",
-    "vscode-json-languageservice": "^5.3.11",
-    "@zed-industries/vscode-languageserver": "10.0.0-next.3",
-    "vscode-languageserver-textdocument": "^1.0.11",
-    "vscode-languageserver-types": "^3.17.5",
-    "vscode-markdown-languageservice": "^0.5.0-alpha.6",
-    "vscode-nls": "^5.2.0",
-    "vscode-uri": "^3.0.8"
-  }
+    "@zed-industries/vscode-css-language-server": "file:packages/css",
+    "@zed-industries/vscode-eslint-language-server": "file:packages/eslint",
+    "@zed-industries/vscode-html-language-server": "file:packages/html",
+    "@zed-industries/language-server": "file:packages/json"
+  },
+  "workspaces": [
+    "packages/css",
+    "packages/eslint",
+    "packages/html",
+    "packages/json",
+    "packages/all"
+  ],
+  "keywords": [
+    "language-server-protocol"
+  ]
 }
