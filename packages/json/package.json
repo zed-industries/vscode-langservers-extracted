@@ -1,0 +1,25 @@
+{
+  "name": "@zed-industries/vscode-json-language-server",
+  "description": "vscode-json-language-server",
+  "version": "5.0.0-pre1",
+  "bin": {
+    "vscode-json-language-server": "bin/vscode-json-language-server"
+  },
+  "contributors": [
+    "hrsh7th",
+    "notpeter"
+  ],
+  "dependencies": {
+    "@vscode/l10n": "^0.0.18",
+    "request-light": "^0.8.0",
+    "vscode-json-languageservice": "^5.4.1",
+    "vscode-languageserver": "^10.0.0-next.6",
+    "vscode-uri": "^3.0.8"
+  },
+  "files": [
+    "bin",
+    "lib"
+  ],
+  "license": "MIT",
+  "main": "dist/node/jsonServerMain.js"
+}

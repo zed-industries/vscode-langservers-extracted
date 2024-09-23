@@ -1,0 +1,25 @@
+{
+  "name": "@zed-industries/vscode-eslint-language-server",
+  "description": "vscode-eslint-language-server",
+  "version": "5.0.0-pre1",
+  "bin": {
+    "vscode-eslint-language-server": "bin/vscode-eslint-language-server"
+  },
+  "contributors": [
+    "hrsh7th",
+    "notpeter"
+  ],
+  "dependencies": {
+    "semver": "^7.6.0",
+    "vscode-languageserver": "^10.0.0-next.6",
+    "vscode-languageserver-protocol": "^3.17.5",
+    "vscode-languageserver-textdocument": "^1.0.12",
+    "vscode-uri": "^3.0.8"
+  },
+  "files": [
+    "bin",
+    "lib"
+  ],
+  "license": "MIT",
+  "main": "dist/eslintServer.js"
+}
