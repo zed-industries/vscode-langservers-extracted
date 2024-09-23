@@ -1,9 +1,5 @@
 {
   "name": "@zed-industries/vscode-langservers-extracted",
-<<<<<<< Updated upstream
-  "version": "4.10.3",
-=======
->>>>>>> Stashed changes
   "description": "",
   "version": "5.0.0-pre1",
   "contributors": [
