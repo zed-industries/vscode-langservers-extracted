@@ -2,6 +2,9 @@
 
 HTML/CSS/JSON/ESLint language servers extracted from [vscode](https://github.com/Microsoft/vscode).
 
+## Fork
+
+This is a [Zed Industries](https://zed.dev) fork of [hrsh7th/vscode-langservers-extracted](https://github.com/hrsh7th/vscode-langservers-extracted).  Please see [CHANGELOG.md](CHANGELOG.md) for more.
 
 # Why?
 
@@ -65,4 +68,3 @@ See the [LICENSE](./LICENSE)
   - https://github.com/microsoft/vscode-eslint/blob/master/License.txt
 - https://github.com/Microsoft/vscode-anycode
   - https://github.com/microsoft/vscode-anycode/blob/master/LICENSE
-
