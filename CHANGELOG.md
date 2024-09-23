@@ -21,6 +21,7 @@
 
 ##
 
+[v4.10.3](https://github.com/zed-industries/vscode-langservers-extracted/compare/v4.10.2...v4.10.3)
 [v4.10.2](https://github.com/zed-industries/vscode-langservers-extracted/compare/v4.10.1...v4.10.2)
 [v4.10.1](https://github.com/zed-industries/vscode-langservers-extracted/compare/v4.10.0...v4.10.1)
 [v4.10.0](https://github.com/zed-industries/vscode-langservers-extracted/commit/0a7a86dd080ec1adfb61732c17ba59492719c001)
