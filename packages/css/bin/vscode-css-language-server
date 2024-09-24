@@ -1,5 +1,5 @@
 #!/usr/bin/env node
-const MIN_NODE = "v20.0.0";
+const MIN_NODE = "v18.0.0";
 if (process.version < MIN_NODE) {
   console.error(`Node >={MIN_NODE} required`);
   process.exit(1);

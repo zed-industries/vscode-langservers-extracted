@@ -20,5 +20,5 @@
     "lib"
   ],
   "license": "MIT",
-  "main": "dist/node/cssServerMain.js"
+  "main": "lib/node/cssServerMain.js"
 }

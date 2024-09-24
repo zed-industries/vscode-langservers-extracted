@@ -12,8 +12,8 @@ VSCODE_ELINT_COMMIT="790646388696511b2665a4d119bf0fb713dd990d"
 DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" >/dev/null 2>&1 && pwd )"
 cd $DIR/../
 
-if [ "$(node -v | sed 's/^v//' | cut -d. -f1)" -lt 20 ]; then
-    echo "Node.js version must be 20.0.0 or greater" && exit 1
+if [ "$(node -v | sed 's/^v//' | cut -d. -f1)" -lt 18 ]; then
+    echo "Node.js version must be 18.0.0 or greater" && exit 1
 fi
 
 # TODO: Add back html
