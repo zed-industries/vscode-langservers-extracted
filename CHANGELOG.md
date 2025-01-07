@@ -4,7 +4,7 @@
 
 - Create npm packages for individual language servers (css, eslint, html, json)
 - Main package is now a meta package that includes all language servers
-- Switch to @zed-industries/* namespace for all packages
+- Switch to @zed-industries/\* namespace for all packages
 - Remove broken code for `markdown` and `anycode`
 - Templatize entrypoint (templates/cli.js)
   - Script shared by all four language servers
@@ -12,7 +12,7 @@
   - Add `--version`: pulls version number from package.json
   - Show help if run without argument instead of traceback
 - Upstream versions of `vscode`, `vscode-eslint` are now pegged to commits.
-- Remove unnecessary code (dist/{tests,browser} and *.map) from package
+- Remove unnecessary code (dist/{tests,browser} and \*.map) from package
 - Remove unncessary dependencies (e.g. no more mocoa, etc)
   - Shrunk full install from 91MiB to <4.5MiB
 - Switch from `yarn` to `npm` (upstream vscode switched away from `yarn`)
@@ -20,8 +20,7 @@
 - New npm scripts:
   - `npm run depcheck`: `syncpack list-mismatches`, `npx depcheck` and `depcheck.js`
   - `npm run check`: `npx prettier --check` and `npm run depcheck`
-  - `npm run fix`: `npx prettier --write`, `syncpack fix-mismatches`  and `syncpack format`
-
+  - `npm run fix`: `npx prettier --write`, `syncpack fix-mismatches` and `syncpack format`
 
 ## [v4.10.3] - 2024-09-23 (unreleased)
 
