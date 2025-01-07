@@ -1,0 +1,23 @@
+{
+  "name": "@zed-industries/vscode-html-language-server",
+  "description": "vscode-html-language-server",
+  "version": "5.0.0-pre1",
+  "bin": {
+    "vscode-html-language-server": "bin/vscode-html-language-server"
+  },
+  "contributors": [
+    "hrsh7th",
+    "notpeter"
+  ],
+  "dependencies": {
+    "vscode-languageserver": "^@zed-industries/vscode-languageserver@10.0.0-next.3",
+    "vscode-languageserver-textdocument": "^1.0.12",
+    "vscode-uri": "^3.0.8"
+  },
+  "files": [
+    "bin",
+    "lib"
+  ],
+  "license": "MIT",
+  "main": "lib/node/htmlServer.js"
+}

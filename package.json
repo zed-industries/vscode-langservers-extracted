@@ -20,10 +20,10 @@
     "release": "npx np --no-yarn"
   },
   "dependencies": {
-    "@zed-industries/vscode-css-language-server": "file:packages/css",
-    "@zed-industries/vscode-eslint-language-server": "file:packages/eslint",
-    "@zed-industries/vscode-html-language-server": "file:packages/html",
-    "@zed-industries/language-server": "file:packages/json"
+    "@zed-industries/vscode-css-language-server": "5.0.0-pre1",
+    "@zed-industries/vscode-eslint-language-server": "5.0.0-pre1",
+    "@zed-industries/vscode-html-language-server": "5.0.0-pre1",
+    "@zed-industries/vscode-json-language-server": "5.0.0-pre1"
   },
   "workspaces": [
     "packages/css",
