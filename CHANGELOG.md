@@ -2,7 +2,11 @@
 
 ## Unreleased
 
-## [v4.10.3] - 2024-09-23 (unreleased)
+## [v4.10.4] - 2025-04-23
+
+- Fix issue with changes to html language server introduced in v4.10.1
+
+## [v4.10.3] - 2024-09-23
 
 - Capture `vscode-html-language-server` generated artifact in-repo.
 
