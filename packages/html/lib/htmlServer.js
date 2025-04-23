@@ -273,7 +273,7 @@ function startServer(connection, runtime) {
                     while (1) switch (_context.prev = _context.next) {
                       case 0:
                         document = documentChange.document;
-                        if (!documentChange.changes) {
+                        if (!(documentChange.changes && documentChange.changes.length == 1)) {
                           _context.next = 42;
                           break;
                         }
