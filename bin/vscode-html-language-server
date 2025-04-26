@@ -1,4 +1,4 @@
 const path = require("path");
 require(
-  path.join(__dirname, "/../lib/html-language-server/node/htmlServerMain.js"),
+  path.join(__dirname, "/../packages/html/lib/node/htmlServerMain.js"),
 );
