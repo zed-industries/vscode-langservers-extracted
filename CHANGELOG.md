@@ -4,6 +4,10 @@
 
 - Add missing shebang to `bin/vscode-html-language-server`.
 
+## [v4.10.6]
+
+## [v4.10.5]
+
 ## [v4.10.4] - 2025-04-23
 
 - Fix issue with changes to html language server introduced in v4.10.1
