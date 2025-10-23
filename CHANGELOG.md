@@ -2,6 +2,8 @@
 
 ## Unreleased
 
+## [v4.10.7]
+
 - Add missing shebang to `bin/vscode-html-language-server`.
 
 ## [v4.10.6]
