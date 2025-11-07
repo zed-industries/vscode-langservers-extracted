@@ -14,11 +14,7 @@ This is a [Zed Industries](https://zed.dev) fork of [hrsh7th/vscode-langservers-
 
 # Usage
 
-You can install this via `npm i -g vscode-langservers-extracted`.
-
-OR
-
-in the aur via `yay -S vscode-langservers-extracted`
+You can install this via `npm i -g @zed-industries/vscode-langservers-extracted`.
 
 After that, you get the following commands.
 
