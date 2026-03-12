@@ -16,7 +16,7 @@ var path_1 = require("path");
 var fs_1 = require("fs");
 var contents = {};
 var serverFolder = (0, path_1.basename)(__dirname) === 'dist' ? (0, path_1.dirname)(__dirname) : (0, path_1.dirname)((0, path_1.dirname)(__dirname));
-var TYPESCRIPT_LIB_SOURCE = (0, path_1.join)(serverFolder, '../../node_modules/typescript/lib');
+var TYPESCRIPT_LIB_SOURCE = (0, path_1.dirname)(require.resolve('typescript/lib/lib.d.ts'));
 var JQUERY_PATH = (0, path_1.join)(serverFolder, 'lib/jquery.d.ts');
 function loadLibrary(name) {
   var content = contents[name];
