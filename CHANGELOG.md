@@ -2,6 +2,10 @@
 
 ## Unreleased
 
+## [v4.10.8]
+
+- Fix resolution of `typescript/lib`.
+
 ## [v4.10.7]
 
 - Add missing shebang to `bin/vscode-html-language-server`.
