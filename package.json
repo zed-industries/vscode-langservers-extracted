@@ -19,7 +19,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/hrsh7th/vscode-langservers-extracted.git"
+    "url": "git+https://github.com/zed-industries/vscode-langservers-extracted.git"
   },
   "keywords": [
     "language-server-protocol"
